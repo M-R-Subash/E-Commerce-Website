@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins' , 'sans-serif';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    position: sticky;
+    background-color: #e3e6f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0px 5px 25px hsla(0, 0%, 0%, 0.219);
+    z-index: 999;
+    top: 0;
+    
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links li a{
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover , .nav-links li a.active{
+    color: #088178;
+}
+
+.nav-links li a.active::after , .nav-links li a:hover::after{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    top: 25px;
+    left: 0;
+
+}
+
+.nav-links a button{
+    background-color: #e3e6f3;
+}
+
+.nav-links a button i{
+    font-size: 20px;
+}
+
+.menu{
+    display: none;
+    align-items: center;
+    gap: 30px;
+    font-size: 22px;
+}
+
+.close{
+    display: none;
+}
+
+.shop-banner{
+    color: white;
+    background-image: url(./img/about/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.shop-banner h1{
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.shop-banner p{
+    font-size: 16px;
+    letter-spacing: .5px;
+    color: lightgrey;
+    text-align: center;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    margin: 50px 0;
+}
+
+.about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.about div{
+    height: 100%;        
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about div h1{
+    font-size: 46px;
+}
+
+.about div p{
+    font-size: 14px;
+    color: gray;
+    letter-spacing: .5px;
+}
+
+.about div p:nth-child(3){
+    margin-top: 10px;
+    text-decoration: underline dotted gray;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+
+.about .animation {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;         /* Start from outside the right */
+    animation: slide-left 10s linear infinite;
+    color: yellowgreen;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.video-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.video-container h1{
+    font-size: 38px;
+}
+
+.video-container h1 span{
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+video{
+    border-radius: 50px;
+}
+
+#features{
+    margin: 40px 0;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#features div{
+    border: 1px solid #cce7d0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#features div h5{
+    color: #088178;
+    letter-spacing: .5px;
+    font-size: 12px;
+    padding: 5px 0;
+    margin-top: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#features div:first-child h5{
+    background-color: #fddde4;
+}
+#features div:nth-child(2) h5{
+    background-color: #cdebbc;
+}
+#features div:nth-child(3) h5{
+    background-color: #d1e8f2;
+}
+#features div:nth-child(4) h5{
+    background-color: #cdd4f8;
+}
+#features div:nth-child(5) h5{
+    background-color: #f6dbf6;
+}
+#features div:last-child h5{
+    background-color: #fff2e5;
+}
+
+.featured-product-title{
+    text-align: center;
+}
+
+.featured-product-title h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.featured-product-title p{
+    color: grey;
+    font-size: 14px;
+    letter-spacing: .5px;
+    margin-bottom: 50px;
+
+}
+
+#newsletter{
+    background-image: url(./img/banner/b14.png);
+    background-color: rgb(4, 30, 66);
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+#newsletter p{
+    font-size: 14px;
+    margin-top: 15px;
+    letter-spacing: .5px;
+}
+
+#newsletter span{
+    color: gold;
+}
+
+#newsletter div:last-child{
+    display: flex;
+    height: 6vh;
+}
+
+#newsletter div:last-child input{
+    width: 400px;
+    padding: 0 20px;
+    font-family: 'Poppins';
+    letter-spacing: .5px;
+    outline: 0;
+}
+
+#newsletter div:last-child button{
+    font-family: 'Poppins';
+    letter-spacing: .5px;
+    font-weight: 500;
+    padding: 0 20px;
+    color: white;
+    background-color: #088178;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 80px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+footer div h6{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-left: 5px;
+}
+
+footer p , footer a{
+    letter-spacing: .5px;
+    font-size: 14px;
+    color: gray;
+    padding: 0 5px;
+}
+
+footer div:first-child p span{
+    font-weight: 600;
+    color: black;
+    padding-right: 5px;
+}
+
+footer div:first-child div{
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer div:first-child div i{
+    margin-left: 5px;
+    transition: .5s ease;
+
+}
+
+footer div:first-child div i:hover{
+    color: #088178;
+    transform: scale(1.2);
+}
+
+footer div:nth-child(2) , footer div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+}
+
+footer div:nth-child(2) a, footer div:nth-child(3) a{
+    cursor: pointer;
+    transition: .15s ease;
+}
+
+footer div:nth-child(2) a:hover , footer div:nth-child(3) a:hover{
+    color: #088178;
+}
+ 
+footer div:last-child div img{
+    border: 1px solid #088178;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer div:last-child div:last-child img{
+    border: none;
+    margin-top: 10px;
+}
+
+.last{
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    margin: 30px 0;
+}
+
+@media (max-width:1200px) {
+    
+    .about {
+    flex-direction: column; 
+    padding: 0 20px;
+  }
+
+  .about > div {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .about img {
+    height: auto; 
+  }
+}
+/*.................... For Screen 799px ....................*/
+
+@media (max-width:799px) {
+
+    header {
+    padding: 20px 40px;
+    }
+    
+    .nav {
+        background-color: #E3E6F3;
+        position: fixed;
+        top: 0;
+        right: -320px;
+        padding: 85px 0 0 0;
+        width: 300px;
+        height: 100vh;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        transition: .5s ease;
+
+
+}
+
+.nav-links{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0 0 0 20px;
+}
+
+.nav-links li {
+    margin-bottom: 30px;
+
+    }
+
+.menu{
+    display: flex;
+}
+
+.cart{
+    display: none;
+}
+
+.close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 22px;
+}
+
+.shop-banner {
+    height: 20vh;
+
+}
+
+.about {
+    flex-direction: column; 
+    padding: 0 20px; 
+  }
+
+  .about > div {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .about img {
+    height: auto; 
+  }
+
+  video {
+    width: 500px;
+}
+
+    #features {
+    padding: 0 40px;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+  #newsletter {
+    justify-content: center;
+    padding: 0 40px;
+}
+
+footer {
+    padding: 0 40px;
+    margin-top: 20px;
+}
+
+footer div:first-child div i{
+    margin-bottom: 15px;
+}
+}
+
+
+/*  ............ For Screen 499px ...............  */
+
+@media (max-width:499px) {
+    
+    header {
+    padding: 20px 20px;
+}
+
+#features {
+    padding: 0 20px;
+    gap: 10px;
+    margin: 0;
+    margin: 10px;
+}
+
+.video-container{
+        margin-bottom: 40px;
+}
+
+.video-container h1 {
+    font-size: 26px;
+
+}
+
+video {
+    width: 300px;
+}
+
+#features {
+    padding: 0 20px;
+    gap: 10px;
+    margin: 0;
+    margin: 10px;
+}
+
+#features div img{
+    width: 130px;
+}
+
+#newsletter div:last-child button{
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  #newsletter div:last-child input {
+    width: 60vw;
+    padding: 0 10px;
+}
+
+footer {
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+}

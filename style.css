@@ -1,0 +1,738 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins' , 'sans-serif';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    position: sticky;
+    background-color: #e3e6f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0px 5px 25px hsla(0, 0%, 0%, 0.219);
+    z-index: 999;
+    top: 0;
+    
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links li a{
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover , .nav-links li a.active{
+    color: #088178;
+}
+
+.nav-links li a.active::after , .nav-links li a:hover::after{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    top: 25px;
+    left: 0;
+
+}
+
+.nav-links a button{
+    background-color: #e3e6f3;
+}
+
+.nav-links a button i{
+    font-size: 20px;
+}
+
+.menu{
+    display: none;
+    align-items: center;
+    gap: 30px;
+    font-size: 22px;
+}
+
+.close{
+    display: none;
+}
+
+#intro{
+    background-image: url(./img/hero4.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 80px;
+    line-height: 50px;
+}
+
+#intro h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#intro h2{
+    font-size: 40px;
+}
+
+#intro h1{
+    font-size: 55px;
+    color: #088178;
+}
+
+#intro p{
+    font-weight: 300;
+    color: grey;
+}
+
+#intro button{
+    background-color:transparent;
+    font-family: 'Poppins';
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    background-image: url(./img/button.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#features{
+    margin: 40px 0;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#features div{
+    border: 1px solid #cce7d0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#features div h5{
+    color: #088178;
+    letter-spacing: .5px;
+    font-size: 12px;
+    padding: 5px 0;
+    margin-top: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#features div:first-child h5{
+    background-color: #fddde4;
+}
+#features div:nth-child(2) h5{
+    background-color: #cdebbc;
+}
+#features div:nth-child(3) h5{
+    background-color: #d1e8f2;
+}
+#features div:nth-child(4) h5{
+    background-color: #cdd4f8;
+}
+#features div:nth-child(5) h5{
+    background-color: #f6dbf6;
+}
+#features div:last-child h5{
+    background-color: #fff2e5;
+}
+
+.featured-product-title{
+    text-align: center;
+}
+
+.featured-product-title h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.featured-product-title p{
+    color: grey;
+    font-size: 14px;
+    letter-spacing: .5px;
+    margin-bottom: 50px;
+
+}
+
+.fashion-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.fashion-1-shirts{
+    padding: 10px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.fashion-1-shirts img{
+    border-radius: 20px;
+}
+
+.fashion-1-shirts p{
+    color: grey;
+    font-size: 12px;
+}
+
+.fashion-1-shirts h4{
+    font-weight: 600;
+    letter-spacing: .5px; 
+}
+
+.fashion-1-shirts p i{
+    color: gold;
+}
+
+.fashion-1-shirt-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fashion-1-shirt-price p:first-child{
+    font-size: 16px;
+    font-weight: 700;
+    color: #088178;
+    letter-spacing: .5px;
+}
+
+.fashion-1-shirt-price p:last-child i{
+    font-size: 22px;
+    color: #088178;
+    background-color: #e8f6ea;
+    padding: 7px 8px;
+    border-radius: 50%;
+    border: 1px solid #cce7d0;
+}
+
+#banner-1{
+    margin: 50px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(./img/banner/b2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+}
+
+#banner-1 h4{
+
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+#banner-1 h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+#banner-1 h1 span{
+    color: tomato;
+}
+
+#banner-1 button{
+    padding: 15px 30px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    letter-spacing: .5px;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+#banner-1 button:hover{
+    background-color: #088178;
+    color: white;
+}
+
+.offers-1 , .offers-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 80px;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.offers-1 div:first-child{
+    background-image: url(./img/banner/b17.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.offers-1 div:last-child{
+    background-image: url(./img/banner/b10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.offers-1 div {
+    margin: 20px 0;
+    padding: 0 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-width: 580px;
+    cursor: pointer;
+}
+
+.offers-1 div h4{
+    font-weight: 300;
+    letter-spacing: .5px;
+    font-size: 18px;
+}
+
+.offers-1 div h1{
+    font-size: 38px;
+}
+
+.offers-1 div p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: .5px;
+}
+
+.offers-1 div button{
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    letter-spacing: .5px;
+    font-weight: 500;
+    transition: .5s ease;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.offers-1 div:hover button{
+    background-color: white;
+    color: black;
+}
+
+.offers-2 div{
+    height: 30vh;
+    width: 30%;
+    margin: 50px 0;
+    padding: 0 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.offers-2 div:first-child{
+    background-image: url(./img/banner/b7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.offers-2 div:nth-child(2){
+    background-image: url(./img/banner/b4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.offers-2 div:last-child{
+    background-image: url(./img/banner/b18.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.offers-2 div h2{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.offers-2 div h4{
+    color: tomato;
+}
+
+#newsletter{
+    background-image: url(./img/banner/b14.png);
+    background-color: rgb(4, 30, 66);
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+#newsletter p{
+    font-size: 14px;
+    margin-top: 15px;
+    letter-spacing: .5px;
+}
+
+#newsletter span{
+    color: gold;
+}
+
+#newsletter div:last-child{
+    display: flex;
+    height: 6vh;
+}
+
+#newsletter div:last-child input{
+    width: 400px;
+    padding: 0 20px;
+    font-family: 'Poppins';
+    letter-spacing: .5px;
+    outline: 0;
+}
+
+#newsletter div:last-child button{
+    font-family: 'Poppins';
+    letter-spacing: .5px;
+    font-weight: 500;
+    padding: 0 20px;
+    color: white;
+    background-color: #088178;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 80px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+footer div h6{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-left: 5px;
+}
+
+footer p , footer a{
+    letter-spacing: .5px;
+    font-size: 14px;
+    color: gray;
+    padding: 0 5px;
+}
+
+footer div:first-child p span{
+    font-weight: 600;
+    color: black;
+    padding-right: 5px;
+}
+
+footer div:first-child div{
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer div:first-child div i{
+    margin-left: 5px;
+    transition: .5s ease;
+
+}
+
+footer div:first-child div i:hover{
+    color: #088178;
+    transform: scale(1.2);
+}
+
+footer div:nth-child(2) , footer div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+}
+
+footer div:nth-child(2) a, footer div:nth-child(3) a{
+    cursor: pointer;
+    transition: .15s ease;
+}
+
+footer div:nth-child(2) a:hover , footer div:nth-child(3) a:hover{
+    color: #088178;
+}
+ 
+footer div:last-child div img{
+    border: 1px solid #088178;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer div:last-child div:last-child img{
+    border: none;
+    margin-top: 10px;
+}
+
+.last{
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    margin: 30px 0;
+}
+
+@media (max-width:799px) {
+
+    header {
+    padding: 20px 40px;
+    }
+    
+    .nav {
+        background-color: #E3E6F3;
+        position: fixed;
+        top: 0;
+        right: -320px;
+        padding: 85px 0 0 0;
+        width: 300px;
+        height: 100vh;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        transition: .5s ease;
+
+
+}
+
+.nav-links{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0 0 0 20px;
+}
+
+.nav-links li {
+    margin-bottom: 30px;
+
+    }
+
+.menu{
+    display: flex;
+}
+
+.cart{
+    display: none;
+}
+
+.close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 22px;
+}
+
+#intro {
+    background-position: top 30% right 30%;
+    height: 70vh;
+    padding: 0px 40px;
+}
+
+#features {
+    padding: 0 40px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fashion-1 {
+    justify-content: center;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+.offers-1 {
+    justify-content: center;
+    min-width: 100%;
+    padding: 0 40px;
+}
+
+.offers-2 div {
+    height: 30vh;
+    width: 28%;
+    padding: 0 40px;
+}
+
+#newsletter {
+    justify-content: center;
+    padding: 0 40px;
+}
+
+footer {
+    padding: 0 40px;
+    margin-top: 20px;
+}
+
+footer div:first-child div i{
+    margin-bottom: 15px;
+}
+
+}
+
+@media (max-width:499px) {
+    
+    header {
+    padding: 20px 20px;
+}
+
+#intro {
+    background-position: 50%;
+    padding: 0px 20px;
+}
+
+#intro h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#intro h2 {
+    font-size: 28px;
+}
+
+#intro h1 {
+    font-size: 38px;
+    color: #088178;
+}
+
+#features {
+    padding: 0 20px;
+    gap: 10px;
+    margin: 0;
+    margin: 10px;
+}
+
+#features div img{
+    width: 130px;
+}
+
+.featured-product-title h1 {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+#banner-1 h1 {
+    font-size: 28px;
+    font-weight: 500;
+}
+  #offers {
+    padding: 0; 
+    margin: 0;
+  }
+
+  .offers-1,
+  .offers-2 {
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 0;
+    margin: 0; 
+  }
+
+    .offers-1{
+        gap: 10px;
+}
+
+  .offers-1 div,
+  .offers-2 div {
+    width: 100%;
+    min-width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .offers-2 div {
+    margin: 10px 0px;
+    padding: 0px 20px;
+}
+
+  .offers-1 div {
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .offers-2 div {
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #newsletter div:last-child button{
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  #newsletter div:last-child input {
+    width: 60vw;
+    padding: 0 10px;
+}
+
+footer {
+    padding: 0 10px;
+    margin-top: 10px;
+}
+}
+

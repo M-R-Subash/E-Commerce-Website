@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./img/icon.jpg">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="img/zoro_logo-removebg-preview.png" width="100">
+        </div>
+        <div class="nav">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./shop.html" >Shop</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contacts.html">Contact</a></li>
+                <li><a href="./cart.html" class="active cart-icon"><i class='fa fa-shopping-cart'></i></a></li>
+                <a href="#" class="close"><i class='fa fa-close'></i></a>
+            </ul>
+        </div>
+        <div class="menu">
+            <a href="./cart.html" class="active" ><i class='fa fa-shopping-cart'></i></a>
+            <i id="menu-bar" class='fa fa-bars'></i>
+        </div>
+
+    </header>
+
+    <div class="shop-banner">
+        <h1>#Cart</h1>
+        <p><span>LEAVE A MESSAGE.</span>We love to hear from you</p>
+    </div>
+
+    
+
+   <section class="cart" >
+
+    <table width="100%">
+        <thead>
+            <tr>
+                <td>remove</td>
+                <td>image</td>
+                <td>product</td>
+                <td>price</td>
+                <td>quantity</td>
+                <td>subtotal</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#"><i class='fa fa-times-circle'></i></a></td>
+                <td><img src="./img/products/f1.jpg" width="70"></td>
+                <td><p>Cartoon Astronaut T-shirt</p></td>
+                <td><p>$79.99</p></td>
+                <td><input type="number" value="1"></td>
+                <td><p>$79.99</p></td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class='fa fa-times-circle'></i></a></td>
+                <td><img src="./img/products/f2.jpg" width="70"></td>
+                <td><p>Cartoon Astronaut T-shirt</p></td>
+                <td><p>$79.99</p></td>
+                <td><input type="number" value="1"></td>
+                <td><p>$79.99</p></td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class='fa fa-times-circle'></i></a></td>
+                <td><img src="./img/products/f3.jpg" width="70"></td>
+                <td><p>Cartoon Astronaut T-shirt</p></td>
+                <td><p>$79.99</p></td>
+                <td><input type="number" value="1"></td>
+                <td><p>$79.99</p></td>
+            </tr>
+        </tbody>
+    </table>
+
+   </section>
+
+   <section class="total">
+        <div class="coupon">
+            <h2>Apply Coupon</h2>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button>Apply</button>
+        </div>
+        <div class="cart-total">
+            <h2>Cart Total</h2>
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td><p>Cart Subtotal</p></td>
+                        <td><p>$ 335</p></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>Shipping</p></td>
+                        <td><p>Free</p></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Total</b></p></td>
+                        <td><p><b>$ 335</b></p></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button>Proceed to Checkout</button>
+        </div>
+   </section>
+
+   <footer>
+
+        <div>
+            <img src="./img/zoro_logo-removebg-preview.png" width="100">
+            <h6>Contact</h6>
+            <p><span>Address:</span>562 Wellington Road , Street 32 , San Fransisco</p>
+            <p><span>Phone:</span>+01 2222 365 / (+91) 98765 43210</p>
+            <p><span>Hours :</span> 10:00 , Mon-Sat</p>
+            <h6>Follow</h6>
+            <div>
+                <i class='fa fa-instagram'></i>
+                <i class='fa fa-facebook'></i>
+                <i class='fa fa-twitter'></i>
+                <i class='fa fa-pinterest'></i>
+                <i class='fa fa-youtube-play'></i>
+            </div>
+        </div>
+        <div>
+            <h6>About</h6>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div>
+            <h6>My Account</h6>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Whishlist</a>
+            <a href="#">Track & Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div>
+            <h6>Install App</h6>
+            <p>From App Store or Google Play</p>
+            <div>
+                <img src="./img/pay/app.jpg" alt="">
+                <img src="./img/pay/play.jpg" alt="">
+            </div>
+            <p>Secure Payment Gateways</p>
+            <div>
+                <img src="./img/pay/pay.png" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <p class="last">@All Copyrights Reserved - 2025, Subash - HTML CSS Ecommerce Template</p>
+    
+    <script src="./index.js" ></script>
+
+</body>
+</html>
