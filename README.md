@@ -16,7 +16,6 @@ A fully-featured online shopping website with comprehensive navigation and moder
 
 ### 🛍️ **Shop** 
 - Complete product catalog with grid layout
-- Advanced filtering by category, price, and brand
 - Product search functionality
 - Sort by price, popularity, and newness
 
@@ -39,9 +38,7 @@ A fully-featured online shopping website with comprehensive navigation and moder
 - FAQ section
 
 ### 🛒 **Shopping Cart**
-- Add/remove items functionality
 - Quantity management
-- Price calculation and totals
 - Local storage persistence
 - Checkout process interface
 
